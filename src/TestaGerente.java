@@ -13,6 +13,8 @@ public class TestaGerente {
         SistemaInterno valid = new SistemaInterno();
         valid.autentica(adm);
 
+        
+
 
 
 

@@ -1,7 +1,7 @@
 public class SistemaInterno {
 
-    private int senha = 1908;
-    public void autentica(FuncionarioAut gerente){
+    private int senha;
+    public void autentica(Autenticavel gerente){
        boolean autenticou = gerente.autentica(this.senha);
        if (autenticou) {
            System.out.println("Liberado");
@@ -10,9 +10,9 @@ public class SistemaInterno {
 
        }
     }
-    public void autentica(Adm adm){
+    public void autentica(Adm adm) {
         boolean autenticou = adm.autentica(this.senha);
-        if(autenticou) {
+        if (autenticou) {
             System.out.println("Liberado");
         } else {
             System.out.println("Negado");
